@@ -30,3 +30,4 @@ x = [2, 1, 2]
 y = [2, 1, 3, 2, 2]
 z = [2, 1, 3, 2, 3, 1]
 print(minimumMoves(z))
+#comment goes here
