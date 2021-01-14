@@ -129,3 +129,4 @@ function maxProfit(costPerCut, salePrice, lengths) {
     }
     return maxProfit;
 }
+//heheheh
