@@ -44,14 +44,11 @@
         $left_element = $right_element = array();
  
         for ($i = 1; $i < count($array); $i++) {
-          echo $pivot_element;
             if ($array[$i] <$pivot_element) {
                 $left_element[] = $array[$i];
-                print_r($left_element);
             }
             else {
                 $right_element[] = $array[$i];
-                print_r($right_element);
             }
         }
  
