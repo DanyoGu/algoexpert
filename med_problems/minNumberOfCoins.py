@@ -9,3 +9,24 @@ def minNumberOfCoinsForChange(n, denoms):
 				ways[amount] = min(ways[amount], ways[amount - denom] + 1)
 	
 	return ways[-1] if ways[-1] != float("inf") else -1
+
+        count =0
+     
+    # Sort array elements
+    numbers.sort() 
+ 
+    l =0
+    r=0
+ 
+    while r<len(numbers):
+        if numbers[r]-numbers[l]==k:
+            count+=1
+            l+=1
+            r+=1
+             
+        # numbers[r] - numbers[l] < sum
+        elif numbers[r]-numbers[l]>k: 
+            l+=1
+        else:
+            r+=1
+    return count
